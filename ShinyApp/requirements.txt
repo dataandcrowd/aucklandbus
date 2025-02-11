@@ -1,0 +1,14 @@
+ipywidgets==7.8.1
+shiny @ git+https://github.com/posit-dev/py-shiny@main
+geopandas==0.14.3
+ipyleaflet==0.18.1
+numpy==1.26.4
+branca==0.7.1
+plotly==5.19.0
+shinywidgets==0.4.1
+faicons==0.2.2
+scipy==1.12.0
+shapely==2.0.2
+pandas==2.2.0
+pyproj==3.6.1
+fiona==1.9.5

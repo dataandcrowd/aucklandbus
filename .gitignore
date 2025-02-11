@@ -1,0 +1,7 @@
+ShinyApp/__pycache__/
+.DS_Store
+.DS_Store?
+ShinyApp/data/*
+!ShinyApp/data/.gitkeep
+DataProcessing/Data/*
+!DataProcessing/Data/.gitkeep
