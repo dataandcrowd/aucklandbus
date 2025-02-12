@@ -21,9 +21,29 @@ Public transport accessibility is a critical factor in urban mobility. By analyz
 * GIS tools for spatial analysis.
 
 ## 📂 Repository Structure
-app/: Contains the Shiny app code.
-data/: Preprocessed datasets used in the analysis.
-scripts/: R scripts for data cleaning and analysis.
+* ShinyApp/: Contains the Shiny app code.
+* ShinyApp/data/: Preprocessed datasets used in the analysis.
+* DataProcessing/: Python scripts for cleaning and processing raw data to be used by the Shiny app.
+* DataProcessing/Data/: Raw data sourced from Auckland Transport and Stats NZ
+* Both data folders can be found for download at: https://uoa-my.sharepoint.com/:f:/g/personal/hshi103_uoa_auckland_ac_nz/EkJpKkNH7xlFtMg4sWBgh-0BWUKdaXt0rRnYjrLKdokGUw?e=RIwn1C
+
+## 🚀 How to Run
+### Processing Custom Data
+* Execute Python scripts in DataProcessing/ in sequence:
+  * daily_busses.py
+  * add_routes_to_busstops.py
+  * process_routes.py
+  * ShinyApp_data_processing.py (customise center coordinates and study radius)
+* Copy generated GeoJSON files from DataProcessing/outputs/geojson to ShinyApp/data
+
+### Running the App
+To run the app locally:
+```bash
+pip install shiny
+python -m shiny run ShinyApp/app.py
+```
+Instructions for hosting can be found at: https://shiny.posit.co/py/docs/deploy.html
+
 
 ## 🙌 Contributing
 We welcome contributions! If you have ideas or suggestions, feel free to reach out!
